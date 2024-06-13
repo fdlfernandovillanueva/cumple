@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordatorio Cumpleaños</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recordatorio Cumpleaños</h1>
+        <form id="birthdayForm">
+            <input type="text" id="name" placeholder="Nombre" required>
+            <input type="date" id="birthdate" required>
+            <button type="submit">Agregar</button>
+        </form>
+        <button id="toggleSavedBirthdays">Cumpleaños Guardados</button>
+        <div id="savedBirthdaysSection" style="display: none;">
+            <h2>Cumpleaños Guardados</h2>
+            <ul id="savedBirthdayList"></ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
